@@ -1,0 +1,154 @@
+.section.image-block-card-container {
+    max-width: 100%;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+ 
+.section.image-block-card-container > div {
+    max-width: 100%;
+    padding: 0;
+}
+ 
+.image-block-card-wrapper {
+    max-width: 100%;
+    padding: 0 10px;
+}
+ 
+/* ================= Main Block ================= */
+ 
+.image-block-card.block {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+    contain: layout paint;
+}
+ 
+/* ================= Image Container ================= */
+ 
+.image-block-card.block > div > div:first-child {
+    height: 620px;
+    position: relative;
+    z-index: 1;
+}
+ 
+/* picture */
+ 
+.image-block-card.block picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ 
+/* image */
+ 
+.image-block-card.block picture,
+.image-block-card.block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.image-block-card.block img {
+    will-change: transform;
+}
+ 
+/* ================= White Content Card ================= */
+ 
+.image-block-card.block > div > div:last-child {
+    background: #fff;
+    max-width: 1100px;
+    width: 75%;
+    margin: -120px auto 0;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    z-index: 2;
+}
+ 
+/* ================= Title ================= */
+ 
+.image-block-card.block h2 {
+    font-family: Asar, Georgia, "Times New Roman", serif;
+    font-size: 36px;
+    color: #000;
+    font-weight: 400;
+    margin: 0 0 28px;
+}
+ 
+/* ================= Description ================= */
+ 
+.image-block-card.block p {
+    font-family:
+        "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    color: #202020;
+    line-height: 1.6;
+    margin: 0;
+}
+ 
+/* ================= Button ================= */
+ 
+.image-block-card .button.secondary {
+    background: #ffea00;
+    color: #202020;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-radius: 0;
+    border: none;
+    width: fit-content;
+}
+ 
+/* ================= Tablet ================= */
+ 
+@media (width <= 1024px) {
+    .image-block-card.block > div > div:first-child {
+        height: 500px;
+    }
+ 
+    .image-block-card.block > div > div:last-child {
+        width: 85%;
+        padding: 40px 50px;
+        margin-top: -100px;
+    }
+ 
+    .image-block-card.block h2 {
+        font-size: 30px;
+    }
+ 
+    .image-block-card.block p {
+        font-size: 16px;
+    }
+}
+ 
+/* ================= Mobile ================= */
+ 
+@media (width <= 600px) {
+    .image-block-card.block > div > div:first-child {
+        height: 320px;
+    }
+ 
+    .image-block-card.block > div > div:last-child {
+        width: 92%;
+        padding: 25px;
+        margin-top: -70px;
+    }
+ 
+    .image-block-card.block h2 {
+        font-size: 24px;
+    }
+ 
+    .image-block-card.block p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+ 
+    .image-block-card .button.secondary {
+        font-size: 13px;
+        padding: 12px 25px;
+    }
+}
