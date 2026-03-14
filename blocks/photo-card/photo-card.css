@@ -41,7 +41,7 @@
 /* Contributor Name */
 
 .photo-card h3 {
-  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-family: Asar, Georgia, "Times New Roman", serif;
   font-size: 24px;
   font-weight: normal;
   color: #202020;
@@ -59,7 +59,7 @@
   color: #202020;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 
@@ -92,14 +92,14 @@
 .photo-card p .icon svg {
   width: 20px;
   height: 20px;
-  fill: #ffffff;
+  fill: #fff;
 }
 
 
 /* Ensure paths inside SVG are white */
 
 .photo-card p .icon svg path {
-  fill: #ffffff;
+  fill: #fff;
 }
 
 
@@ -112,14 +112,14 @@
 
 /* Responsive layout */
 
-@media (max-width: 992px) {
+@media (width <= 992px) {
   .photo-card.block {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .photo-card.block {
     grid-template-columns: 1fr;
   }

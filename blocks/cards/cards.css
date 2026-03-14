@@ -8,13 +8,9 @@
   margin: 40px 0;
 }
 
-/* remove bullet */
-.cards.tabs.block ul li {
-  list-style: none;
-}
-
 /* card container */
 .cards.tabs.block ul li {
+  list-style: none;
   background: #fff;
   overflow: hidden;
 }
@@ -42,6 +38,7 @@
   margin: 0 0 14px;
   letter-spacing: 0.001em;
   text-transform: uppercase;
+
   /* min-height: 44px; */
 }
 
@@ -51,7 +48,7 @@
   font-size: 13px;
   color: #696969;
   line-height: 1.5;
-  margin: 0px;
+  margin: 0;
 }
 
 .cards-card-body p:last-child {
@@ -64,19 +61,19 @@
 
 /* responsive layout */
 
-@media (max-width: 1200px) {
+@media (width <= 1200px) {
   .cards.tabs.block ul {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .cards.tabs.block ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .cards.tabs.block ul {
     grid-template-columns: 1fr;
   }

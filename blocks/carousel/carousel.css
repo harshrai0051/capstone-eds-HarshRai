@@ -1,12 +1,12 @@
 /* container full width */
- 
+
 .section.carousel-container {
   max-width: 100% !important;
   padding: 0 !important;
 }
- 
+
 /* carousel block */
- 
+
 .carousel.block {
   position: relative;
   width: 100vw;
@@ -14,39 +14,39 @@
   overflow: visible;
   margin-bottom: 120px;
 }
- 
+
 /* slide */
- 
+
 .carousel.block > div {
   display: none;
-  animation: fadeIn 0.6s ease;
+  animation: fade-in 0.6s ease;
 }
- 
+
 .carousel.block > .carousel-active {
   display: block;
 }
- 
+
 /* image */
- 
+
 .carousel.block > div > div:first-child {
   height: 620px;
   position: relative;
   z-index: 1;
 }
- 
+
 .carousel.block > div > div:first-child img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
- 
+
 /* grey content card */
- 
+
 .carousel.block > div > div:last-child {
-  background: #ffffff;
+  background: #fff;
   max-width: 1100px;
   width: 75%;
-  margin: -120px auto 0 auto;
+  margin: -120px auto 0;
   padding: 60px 80px;
   display: flex;
   flex-direction: column;
@@ -55,19 +55,19 @@
   z-index: 2;
   box-shadow: none;
 }
- 
+
 /* title */
- 
+
 .carousel.block h2 {
-  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-family: Asar, Georgia, "Times New Roman", serif;
   font-size: 36px;
-  color: #000000;
+  color: #000;
   font-weight: 400;
-  margin: 0 0 28px 0;
+  margin: 0 0 28px;
 }
- 
+
 /* description */
- 
+
 .carousel.block p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -76,15 +76,15 @@
   line-height: 1.6;
   margin: 0;
 }
- 
+
 /* CTA button */
- 
+
 .carousel .button.secondary,
 .carousel .button.secondary:visited,
 .carousel .button.secondary:hover,
 .carousel .button.secondary:active,
 .carousel .button.secondary:focus {
-  background: #FFEA00;
+  background: #ffea00;
   color: #202020;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -95,20 +95,20 @@
   border: none;
   width: fit-content;
 }
- 
+
 /* arrow container */
- 
+
 .carousel .button-action-container {
   position: absolute;
   right: 70px;
   bottom: 50px;
   display: flex;
   gap: 26px;
-  z-index: 50; /* ensure arrows stay above card */
+  z-index: 50;
 }
- 
+
 /* arrow buttons */
- 
+
 .carousel .button-action-container button {
   background: transparent;
   border: none;
@@ -120,47 +120,47 @@
   justify-content: center;
   position: relative;
 }
- 
+
 /* arrow icons */
- 
-.carousel .action--previous::before {
+
+.carousel .action-previous::before {
   content: "←";
   font-size: 28px;
   color: #202020;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
- 
-.carousel .action--next::before {
+
+.carousel .action-next::before {
   content: "→";
   font-size: 28px;
   color: #202020;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
- 
+
 /* arrow hover effect */
- 
+
 .carousel .button-action-container button:hover::before {
   opacity: 0.6;
 }
- 
+
 /* hide text */
- 
+
 .carousel .button-action-container span:last-child {
   display: none;
 }
- 
+
 /* dots */
- 
+
 .carousel ul {
   position: relative;
-  margin: 25px auto 0 auto;
+  margin: 25px auto 0;
   display: flex;
   justify-content: center;
   gap: 10px;
   list-style: none;
   z-index: 3;
 }
- 
+
 .carousel ul li {
   width: 10px;
   height: 10px;
@@ -168,100 +168,103 @@
   background: #bbb;
   cursor: pointer;
 }
- 
+
 .carousel ul .list-active {
   background: #333;
 }
- 
+
 /* animation */
- 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
- 
+
 /* responsive */
- 
+
 @media (width <= 900px) {
   .carousel.block > div > div:first-child {
     height: 420px;
   }
+
   .carousel.block > div > div:last-child {
     width: 90%;
     padding: 30px;
     bottom: -60px;
   }
+
   .carousel.block h2 {
     font-size: 28px;
   }
- 
 }
+
 /* ================= Tablet ================= */
- 
-@media (width <= 1024px){
- 
-.carousel.block > div > div:first-child{
-height: 500px;
+
+@media (width <= 1024px) {
+  .carousel.block > div > div:first-child {
+    height: 500px;
+  }
+
+  .carousel.block > div > div:last-child {
+    width: 85%;
+    padding: 40px 50px;
+    margin-top: -100px;
+  }
+
+  .carousel.block h2 {
+    font-size: 30px;
+  }
+
+  .carousel.block p {
+    font-size: 16px;
+  }
+
+  .carousel .button-action-container {
+    right: 40px;
+    bottom: 40px;
+  }
 }
- 
-.carousel.block > div > div:last-child{
-width: 85%;
-padding: 40px 50px;
-margin-top: -100px;
-}
- 
-.carousel.block h2{
-font-size: 30px;
-}
- 
-.carousel.block p{
-font-size: 16px;
-}
- 
-.carousel .button-action-container{
-right: 40px;
-bottom: 40px;
-}
- 
-}
- 
+
 /* ================= Mobile ================= */
- 
-@media (width <= 600px){
- 
-.carousel.block > div > div:first-child{
-height: 320px;
-}
- 
-.carousel.block > div > div:last-child{
-width: 92%;
-padding: 25px;
-margin-top: -70px;
-}
- 
-.carousel.block h2{
-font-size: 24px;
-}
- 
-.carousel.block p{
-font-size: 15px;
-line-height: 1.5;
-}
- 
-.carousel .button.secondary{
-font-size: 13px;
-padding: 12px 25px;
-}
- 
-.carousel .button-action-container{
-right: 20px;
-bottom: 25px;
-gap: 16px;
-}
- 
-.carousel .action--previous::before,
-.carousel .action--next::before{
-font-size: 22px;
-}
- 
+
+@media (width <= 600px) {
+  .carousel.block > div > div:first-child {
+    height: 320px;
+  }
+
+  .carousel.block > div > div:last-child {
+    width: 92%;
+    padding: 25px;
+    margin-top: -70px;
+  }
+
+  .carousel.block h2 {
+    font-size: 24px;
+  }
+
+  .carousel.block p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .carousel .button.secondary {
+    font-size: 13px;
+    padding: 12px 25px;
+  }
+
+  .carousel .button-action-container {
+    right: 20px;
+    bottom: 25px;
+    gap: 16px;
+  }
+
+  .carousel .action-previous::before,
+  .carousel .action-next::before {
+    font-size: 22px;
+  }
 }

@@ -57,7 +57,7 @@
 
 /* accordion content */
 .accordion-item-body {
-  padding: 0 0 30px 0;
+  padding: 0 0 30px;
   max-width: 750px;
 }
 
@@ -72,7 +72,7 @@
 /* FAQ IMAGE SECTION */
 .section.image-text-container {
   max-width: 1200px;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 60px;
   padding: 0 20px;
 }
 
@@ -93,7 +93,6 @@
 /* ================= Tablet ================= */
  
 @media (width <= 1024px){
- 
   .section.accordion-container{
     max-width:600px;
     margin-left:40px;
@@ -122,7 +121,6 @@
 /* ================= Mobile ================= */
  
 @media (width <= 600px){
- 
   .section.accordion-container{
     max-width:100%;
     margin-left:0;

@@ -328,7 +328,7 @@ h3#where-do-you-want-to-go {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 24px;
   color: #202020;
-  margin: 10px 0px;
+  margin: 10px 0;
   font-weight: 400;
 }
 
@@ -347,7 +347,7 @@ h3#where-do-you-want-to-go {
 /* About Us heading - WKND exact style */
 
 #about-us {
-  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-family: Asar, Georgia, "Times New Roman", serif;
   font-size: 40px;
   font-weight: normal;
   color: #202020;
@@ -362,21 +362,19 @@ h3#where-do-you-want-to-go {
 
 /* Adventures heading */
 .default-content-wrapper h1 {
-  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-family: Asar, Georgia, "Times New Roman", serif;
   font-size: 40px;
   font-weight: normal;
   color: #202020;
-
   margin-top: 27px;
   margin-bottom: 13.5px;
   margin-left: 0;
-
   line-height: 1.2;
 }
 
 /* Main article title */
 .default-content-wrapper h2 {
-  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-family: Asar, Georgia, "Times New Roman", serif;
   font-size: 34px;
   font-weight: 400;
   color: #202020;
