@@ -1,0 +1,161 @@
+/* FAQ section container */
+.section.accordion-container {
+  max-width: 700px;
+  margin-left: 80px;
+  margin-top: -80px;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* remove default arrow */
+.accordion-item summary {
+  list-style: none;
+}
+
+.accordion-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* accordion row */
+.accordion-item {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* accordion label */
+.accordion-item-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px 0;
+}
+
+/* question text */
+.accordion-item-label h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #202020;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* plus icon */
+.accordion-item-label::after {
+  content: "+";
+  font-size: 30px;
+  font-weight: 200;
+  color: #202020;
+  transition: all 0.25s ease;
+}
+
+/* minus when open */
+.accordion-item[open] .accordion-item-label::after {
+  content: "−";
+}
+
+/* accordion content */
+.accordion-item-body {
+  padding: 0 0 30px 0;
+  max-width: 750px;
+}
+
+/* paragraph */
+.accordion-item-body p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* FAQ IMAGE SECTION */
+.section.image-text-container {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
+
+/* image wrapper */
+.section.image-text-container picture {
+  display: block;
+  margin-bottom: 40px;
+}
+
+/* image */
+.section.image-text-container picture img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+}
+
+/* ================= Tablet ================= */
+ 
+@media (width <= 1024px){
+ 
+  .section.accordion-container{
+    max-width:600px;
+    margin-left:40px;
+    margin-top:-60px;
+  }
+ 
+  .accordion-label h3{
+    font-size:15px;
+  }
+ 
+  .accordion-content p{
+    font-size:13px;
+  }
+ 
+  .accordion-label::after{
+    font-size:26px;
+  }
+ 
+  .section.image-text-container picture img{
+    max-width:800px;
+  }
+ 
+}
+ 
+ 
+/* ================= Mobile ================= */
+ 
+@media (width <= 600px){
+ 
+  .section.accordion-container{
+    max-width:100%;
+    margin-left:0;
+    margin-top:20px;
+  }
+ 
+  .accordion-label{
+    padding:8px 0;
+  }
+ 
+  .accordion-label h3{
+    font-size:14px;
+  }
+ 
+  .accordion-content{
+    padding-bottom:20px;
+  }
+ 
+  .accordion-content p{
+    font-size:12px;
+    line-height:1.6;
+  }
+ 
+  .accordion-label::after{
+    font-size:22px;
+  }
+ 
+  .section.image-text-container{
+    padding:0 15px;
+  }
+ 
+  .section.image-text-container picture img{
+    max-width:100%;
+  }
+ 
+}

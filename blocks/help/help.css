@@ -1,0 +1,40 @@
+/* create two-column layout */
+
+.section.image-text-container,
+.section.help-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* left side block */
+
+.section.image-text-container {
+  width: 70%;
+}
+
+/* right side block */
+
+.section.help-container {
+  width: 25%;
+  margin-left: 5%;
+}
+
+/* align help section content */
+
+.help-wrapper {
+  padding-top: 120px;
+}
+
+/* help heading */
+
+.help-wrapper h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* help text */
+
+.help-wrapper p {
+  font-size: 16px;
+  line-height: 1.7;
+}

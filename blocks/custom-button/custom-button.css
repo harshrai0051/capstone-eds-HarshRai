@@ -1,0 +1,21 @@
+/* container */
+
+.custom-button {
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+
+/* button */
+
+.custom-button a {
+  background: #FFEA00;
+  color: #202020;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 35px;
+  text-decoration: none;
+  border-radius: 0;
+  border: none;
+  width: fit-content;
+}

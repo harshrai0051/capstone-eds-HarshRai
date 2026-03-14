@@ -323,3 +323,72 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+h3#where-do-you-want-to-go {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  color: #202020;
+  margin: 10px 0px;
+  font-weight: 400;
+}
+
+#magazine {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 40px;
+  color: #202020;
+  font-weight: 400;
+  margin: 27px 0 13.5px;
+}
+
+/* About Us page heading */
+
+/* About Us heading - WKND style */
+
+/* About Us heading - WKND exact style */
+
+#about-us {
+  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: normal;
+  color: #202020;
+  line-height: 1.5;
+  margin-top: 27px;
+  margin-bottom: 13.5px;
+}
+
+.default-content-wrapper p em {
+  font-size: 14px;
+}
+
+/* Adventures heading */
+.default-content-wrapper h1 {
+  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: normal;
+  color: #202020;
+
+  margin-top: 27px;
+  margin-bottom: 13.5px;
+  margin-left: 0;
+
+  line-height: 1.2;
+}
+
+/* Main article title */
+.default-content-wrapper h2 {
+  font-family: "Asar", Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 400;
+  color: #202020;
+  line-height: 1.2;
+  margin: 27px 0 13px;
+}
+
+/* Author text */
+.default-content-wrapper h4 {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 550;
+  color: #202020;
+  margin: 21px 0 0;
+}

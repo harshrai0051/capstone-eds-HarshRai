@@ -1,0 +1,86 @@
+/* container */
+
+.custom-card {
+  max-width: 1200px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+}
+
+/* each card */
+
+.custom-card > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* image */
+
+.custom-card picture img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+/* title */
+
+.custom-card p a {
+  display: block;
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000 !important;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+/* description */
+
+.custom-card p:last-child {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* spacing between text elements */
+
+.custom-card p {
+  margin: 0;
+}
+
+@media (width <= 1024px){
+  .custom-card{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 0 30px;
+  }
+  .custom-card picture img{
+    height: 210px;
+  }
+  .custom-card p a{
+    font-size: 15px;
+  }
+  .custom-card p:last-child{
+    font-size: 13px;
+  }
+}
+
+/* ================= Mobile ================= */
+@media (width <= 600px){
+  .custom-card{
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 0 20px;
+  }
+  .custom-card picture img{
+    height: 200px;
+  }
+  .custom-card p a{
+    font-size: 14px;
+  }
+  .custom-card p:last-child{
+    font-size: 12px;
+  }
+}

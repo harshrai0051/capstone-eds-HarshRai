@@ -1,0 +1,20 @@
+/* heading */
+
+.common-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* yellow underline */
+
+.common-heading h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #ffd400;
+  display: block;
+  margin-top: 12px;
+}
