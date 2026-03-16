@@ -1,7 +1,7 @@
 export default function decorate(block) {
   const items = [...block.children];
 
-  items.forEach((row, index) => {
+  items.forEach((row) => {
     const label = row.children[0];
     const body = row.children[1];
 
@@ -22,9 +22,9 @@ export default function decorate(block) {
     row.replaceWith(details);
 
     // Optional: Open first item by default
-    if (index === 0) {
-      details.setAttribute('open', '');
-    }
+    // if (index === 0) {
+    //   details.setAttribute('open', '');
+    // }
 
     // Close others when one opens
     details.addEventListener('toggle', () => {
