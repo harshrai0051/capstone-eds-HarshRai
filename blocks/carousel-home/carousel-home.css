@@ -1,5 +1,4 @@
 /* carousel wrapper */
-
 .carousel-home {
   position: relative;
   overflow: hidden;
@@ -9,21 +8,18 @@
 }
 
 /* slide track */
-
 .carousel-track {
   display: flex;
   transition: transform 0.6s ease;
 }
 
 /* each slide */
-
 .carousel-track > div {
   min-width: 100%;
   position: relative;
 }
 
 /* hero image */
-
 .carousel-home img {
   width: 100%;
   height: 540px;
@@ -33,7 +29,6 @@
 }
 
 /* carousel content card */
-
 .carousel-card {
   position: absolute;
   left: 50%;
@@ -60,7 +55,6 @@
 }
 
 /* title */
-
 .carousel-card h2 {
   font-family: "Source Serif Pro", Georgia, serif;
   font-size: 36px;
@@ -70,7 +64,6 @@
 }
 
 /* description */
-
 .carousel-card p {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -78,31 +71,20 @@
   line-height: 1.5;
 }
 
-/* button container */
-
-.custom-button {
-  margin-top: 40px;
-  margin-bottom: 150px;
-}
-
 /* button */
-
-.custom-button a {
-  background: #ffea00;
-  color: #202020;
+.carousel-card a {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 14px 35px;
+  background: hsl(54deg 100% 50%);
+  color: #000;
+  font-size: 12px;
+  font-weight: 550;
+  padding: 12px 30px;
   text-decoration: none;
-  border-radius: 0;
-  border: none;
-  width: fit-content;
+  letter-spacing: 0.5px;
   display: inline-block;
 }
 
 /* arrows */
-
 .carousel-arrow {
   position: absolute;
   bottom: 90px;
@@ -120,7 +102,6 @@
 }
 
 /* dots */
-
 .carousel-dots {
   position: absolute;
   bottom: 90px;
